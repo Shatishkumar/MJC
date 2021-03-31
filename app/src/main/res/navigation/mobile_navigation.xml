@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mjc.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_checkInOutFragment"
+            app:destination="@id/nav_chkinout" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_myBooking"
+            app:destination="@id/nav_myBooking" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_reservation"
+            app:destination="@id/nav_reservation" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_roomService"
+            app:destination="@id/nav_roomService" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.mjc.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.mjc.profile.ProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_chkinout"
+        android:name="com.example.mjc.checkInOut.CheckInOutFragment"
+        android:label="Check In / Out"
+        tools:layout="@layout/fragment_check_in_out" />
+    <fragment
+        android:id="@+id/nav_myBooking"
+        android:name="com.example.mjc.myBooking.MyBookingFragment"
+        android:label="My Booking"
+        tools:layout="@layout/fragment_my_booking" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.mjc.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.mjc.help.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_reservation"
+        android:name="com.example.mjc.reservation.ReservationFragment"
+        android:label="Reservation"
+        tools:layout="@layout/fragment_reservation" />
+    <fragment
+        android:id="@+id/nav_roomService"
+        android:name="com.example.mjc.roomService.RoomServiceFragment"
+        android:label="RoomService"
+        tools:layout="@layout/fragment_room_service" />
+</navigation>
