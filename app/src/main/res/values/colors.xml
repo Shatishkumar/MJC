@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Check In / Out-->
+    <color name="bgDrawer">#FFC040D6</color>
+    <color name="bgChkInOut">#7AFFBC</color>
+    <color name="bgMyBooking">#8FF8E3</color>
+    <color name="textchkInOut">#2000FF</color>
+
+    <!--Button-->
+    <color name="txtBlue">#302CA4</color>
 </resources>

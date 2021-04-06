@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".roomService.RoomServiceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <Button
         android:id="@+id/button_housekeeping"
         android:layout_width="wrap_content"
@@ -17,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:drawableTop="@drawable/housekeeping"
+        android:background="@drawable/button_white"
         android:text="Housekeping"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:drawableTop="@drawable/ordermeal"
+        android:background="@drawable/button_white"
         android:text="Order Meal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_housekeeping"
