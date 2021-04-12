@@ -27,7 +27,6 @@ class MyBookingFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_my_booking, container, false)
         val btnCancel: Button =root.findViewById(R.id.button_myBooking_cancel_reservation)
 
-     //   btnCancel.setBackgroundColor(Color.WHITE)
         btnCancel.setOnClickListener {
             findNavController().navigate(R.id.action_nav_myBooking_to_nav_home)
         }

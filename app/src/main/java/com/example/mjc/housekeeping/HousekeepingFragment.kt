@@ -1,4 +1,4 @@
-package com.example.mjc.roomService
+package com.example.mjc.housekeeping
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mjc.R
+import com.example.mjc.roomService.HousekeepingAdapter
 
 class HousekeepingFragment : Fragment() {
 

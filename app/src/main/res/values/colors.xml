@@ -16,4 +16,7 @@
 
     <!--Button-->
     <color name="txtBlue">#302CA4</color>
+
+    <!--Order-->
+    <color name="bgTotal">#E6E6FA</color>
 </resources>

@@ -9,13 +9,13 @@
 
     <Button
         android:id="@+id/button_housekeeping"
-        android:layout_width="wrap_content"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="135dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:drawableTop="@drawable/housekeeping"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_white"
+        android:drawableTop="@drawable/housekeeping"
+        android:gravity="center"
         android:text="Housekeping"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,11 +24,11 @@
         android:id="@+id/button_order_meal"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableTop="@drawable/ordermeal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_white"
+        android:drawableTop="@drawable/ordermeal"
         android:text="Order Meal"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_housekeeping"
         app:layout_constraintTop_toTopOf="parent" />
 

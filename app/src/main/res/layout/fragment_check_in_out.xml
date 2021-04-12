@@ -33,6 +33,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="35dp"
             android:text="Generate Your Code"
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
             android:visibility="visible"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"

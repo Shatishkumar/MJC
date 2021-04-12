@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_housekeeping"
-        android:name="com.example.mjc.roomService.HousekeepingFragment"
+        android:name="com.example.mjc.housekeeping.HousekeepingFragment"
         android:label="Housekeeping"
         tools:layout="@layout/fragment_housekeeping" >
         <action
@@ -91,7 +91,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_order"
-        android:name="com.example.mjc.roomService.OrderFragment"
+        android:name="com.example.mjc.order.OrderFragment"
         android:label="Order Meal"
         tools:layout="@layout/fragment_order" />
 </navigation>

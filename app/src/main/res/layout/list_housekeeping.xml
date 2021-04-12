@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="@+id/textview_housekeeping_item">
 
             <Button
-                android:id="@+id/loanForm_btn_minus"
+                android:id="@+id/housekeeping_btn_minus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,7 +68,7 @@
 
 
             <Button
-                android:id="@+id/loanForm_btn_plus"
+                android:id="@+id/housekeeping_btn_plus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
