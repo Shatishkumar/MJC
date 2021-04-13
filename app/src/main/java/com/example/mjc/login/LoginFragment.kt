@@ -21,13 +21,13 @@ class LoginFragment : Fragment() {
 
         val root=inflater.inflate(R.layout.fragment_login, container, false)
 
-        val btnlogin: Button =root.findViewById(R.id.button_login)
-
-
-
-        btnlogin.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_login_to_nav_home)
-        }
+//        val btnlogin: Button =root.findViewById(R.id.button_login)
+//
+//
+//
+//        btnlogin.setOnClickListener {
+//            findNavController().navigate(R.id.action_nav_login_to_nav_home)
+//        }
 
 
         return root
