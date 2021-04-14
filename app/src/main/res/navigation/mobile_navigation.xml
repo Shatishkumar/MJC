@@ -53,7 +53,11 @@
         <action
             android:id="@+id/action_nav_login_to_nav_home"
             app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_login_to_register"
+            app:destination="@id/nav_register" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_help"
         android:name="com.example.mjc.help.HelpFragment"
@@ -69,4 +73,13 @@
         android:name="com.example.mjc.roomService.RoomServiceFragment"
         android:label="RoomService"
         tools:layout="@layout/fragment_room_service" />
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.example.mjc.register.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_nav_register_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
 </navigation>
