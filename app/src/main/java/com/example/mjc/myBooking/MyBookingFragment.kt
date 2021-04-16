@@ -38,7 +38,7 @@ class MyBookingFragment : Fragment() {
 
 
               for(dss in dataSnapshot.children){
-                  val rid=dss.child("rid").value.toString()
+
                   val roomNo=dss.child("roomNo").value.toString()
                   val roomType=dss.child("roomType").value.toString()
                   val stay=dss.child("stay").value.toString()
@@ -47,38 +47,28 @@ class MyBookingFragment : Fragment() {
                   val chkin=dss.child("checkin").value.toString()
                   val chkout=dss.child("checkout").value.toString()
                   val userID=dss.child("userID").value
+                  val test=dss.child("rid").value
+                  val rid=dss.child("rid").value.toString()
 
-                  textView_myBooking_room_details1.text=
+                  if(test==1001){
+                      textView_myBooking_room_details1.text=
                           "Reservation ID : " +rid +"\n" +
                                   "Room No : " + roomNo +"\n" +
                                   "Room Type : " + roomType
 
-                  textView_myBooking_room_details2.text=
-                          "Stay : " + stay + "Night \n" +
+                      textView_myBooking_room_details2.text=
+                          "Stay : " + stay + " Night \n" +
                                   "Guest : " + guest + "\n" +
                                   "Price : RM " + price + "\n"  +
                                   "Check In : " + chkin + "\n" +
                                   "Check Out : " +chkout
-
-                 /* if(roomNo=="A101"){
-                      textView_myBooking_room_details1.text=
-                              "Reservation ID : " +rid +"\n" +
-                                      "Room No : " + roomNo +"\n" +
-                                      "Room Type : " + roomType
-
-                      textView_myBooking_room_details2.text=
-                              "Stay : " + stay + "Night \n" +
-                                      "Guest : " + guest + "\n" +
-                                      "Price : RM " + price + "\n"  +
-                                      "Check In : " + chkin + "\n" +
-                                      "Check Out : " +chkout
                   }else{
-                      textView_myBooking_room_details1.text=userID.toString()
+                      textView_myBooking_room_details1.text="Welcome "+userID.toString()
                       textView_myBooking_room_details2.text="Let's make a booking now!"
-                  }*/
-
+                  }
 
               }
+
             }
 
             override fun onCancelled(error: DatabaseError) {
